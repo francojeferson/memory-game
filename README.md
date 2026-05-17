@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A classic memory card matching game built with React 19. Pick a category, choose how many cards to play with, and match all the pairs.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Category selection with themed emoji sets
+- Configurable grid size
+- Card flip animation with visual feedback
+- Match detection and score tracking (moves + timer)
+- Responsive grid layout (mobile to desktop)
+- Dark theme
 
-### `npm start`
+## Status
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is in early development. Core game logic (shuffling, match checking, score tracking, game-over detection) is not yet implemented. The component scaffolding, CSS animations, and form layout are in place.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+```bash
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Opens [http://localhost:3000](http://localhost:3000) in development mode.
 
-### `npm run build`
+## Scripts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start dev server on port 3000 |
+| `npm test` | Run tests in watch mode |
+| `npm run build` | Build for production to `build/` |
+| `npm run eject` | Eject CRA config (one-way) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm test
+```
 
-### `npm run eject`
+Uses React Testing Library. Current tests cover: title render, form visibility on load, and card grid appearance after game start.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React 19
+- Create React App 5
+- React Testing Library
+- Inter (Google Fonts)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Franco Jeferson](https://github.com/francojeferson)
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
